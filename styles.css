@@ -84,3 +84,84 @@ input::placeholder {
   opacity: 0.5;
   font-size: 18px;
 }
+/* 📱 Mobile & Tablet Responsive Grid Adjustments */
+@media (max-width: 1024px) {
+  body {
+    padding: 0px 5vw;
+  }
+
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .menu-item-button {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .order-now-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .food-item-checkmark-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  footer nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer > div:first-child {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0px 3vw;
+  }
+
+  .order-now-button {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+
+  .container,
+  #menu-section,
+  #food-section,
+  #services-section {
+    grid-template-columns: 1fr !important;
+  }
+
+  #menu-section > div:nth-child(3) {
+    grid-template-columns: 1fr !important;
+  }
+
+  #menu-section > div:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  #food-section > div,
+  #food-section > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  .food-item-checkmark-item {
+    font-size: 14px;
+  }
+
+  footer > div:first-child {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
